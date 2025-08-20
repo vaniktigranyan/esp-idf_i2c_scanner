@@ -20,9 +20,9 @@
 void i2c_master_init() {
     i2c_config_t conf = {
         .mode = I2C_MODE_MASTER,
-        .sda_io_num = I2C_MASTER_SDA_IO,        // SDA
+        .sda_io_num = I2C_MASTER_SDA_IO,        // SDA GPIO
         .sda_pullup_en = GPIO_PULLUP_ENABLE,    // Enable internal pull-up
-        .scl_io_num = I2C_MASTER_SCL_IO,        // SCL
+        .scl_io_num = I2C_MASTER_SCL_IO,        // SCL GPIO
         .scl_pullup_en = GPIO_PULLUP_ENABLE,    // Enable internal pull-up
         .master.clk_speed = I2C_MASTER_FREQ_HZ, // clock speed
     };
