@@ -24,7 +24,7 @@ void i2c_master_init() {
         .sda_pullup_en = GPIO_PULLUP_ENABLE,    // Enable internal pull-up
         .scl_io_num = I2C_MASTER_SCL_IO,        // SCL GPIO
         .scl_pullup_en = GPIO_PULLUP_ENABLE,    // Enable internal pull-up
-        .master.clk_speed = I2C_MASTER_FREQ_HZ, // clock speed
+        .master.clk_speed = I2C_MASTER_FREQ_HZ, // Clock speed
     };
     i2c_param_config(I2C_MASTER_NUM, &conf);
     i2c_driver_install(I2C_MASTER_NUM, conf.mode, I2C_MASTER_RX_BUF_DISABLE, I2C_MASTER_TX_BUF_DISABLE, 0);
