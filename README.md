@@ -39,7 +39,7 @@ I2C Master-Slave Example
 > 💡 **Note:** Most I2C devices require pull-up resistors (4.7kΩ recommended) on SDA/SCL lines if not built-in.
 
 ## 🛠 Building and⚡Flashing
-
+.
 ```bash
 idf.py build
 idf.py -p com[your_com_port] flash monitor
